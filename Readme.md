@@ -2,7 +2,7 @@
 
 * Студент: [Анна](https://up.htmlacademy.ru/htmlcss/39/user/2483623).
 * Наставник: [Иван Жарков](https://htmlacademy.ru/profile/id191422).
-
+* Мой сайт: [Моя страница](https://annaelada.github.io/Sedona/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
