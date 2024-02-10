@@ -6,21 +6,21 @@
     <title>Седона - прекрасный городок в Аризоне</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <!-- Шапка сайта -->
-      <a class="navigation-logo" href="index.html" aria-current="page">
+      <a class="navigation-logo" aria-current="page">
         <img class="page-header-logo" src="" width="138" height="64" alt="Логотип сайта города Седона">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-             <a class="navigation-link" href="main.html">Главная</a>
+             <a class="navigation-link navigation-link-current">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="about.html">О Седоне</a>
          </li>
          <li class="navigation-item">
-          <a class="navigation-link navigation-link-current" href="hotel.html">Гостиницы</a>
+          <a class="navigation-link" href="catalog.html">Гостиницы</a>
          </li>
         </ul>
         <ul class="navigation-user">
@@ -40,13 +40,13 @@
       </nav>
     </header>
 
-    <main class="main-index">
+    <main class="main-index" data-test="main">
       <!-- Основное содержимое страницы -->
-      <section class="first">
-        <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
+      <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
+      <section class="first" data-test="hero">
         <img src="#" width="458" height="352" alt="">
       </section>
-      <section class="advantages">
+      <section class="advantages" data-test="advantages">
         <h2>Седона — небольшой городок в Аризоне,
           заслуживающий большего!</h2>
         <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -93,13 +93,13 @@
           </li>
         </ul>
       </section>
-      <section class="search">
+      <section class="search" data-test="search">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <!-- <button class="button button-search" type="button">Поиск гостиницы в Седоне</button> -->
         <button class="button button-search" type="button">Поиск гостиницы в Седоне</button>
       </section>
-      <section class="subscribe">
+      <section class="subscribe" data-test="subscribe">
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -111,7 +111,7 @@
       </section>
 
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <!-- Подвал сайта -->
       <ul class="social-list">
         <li class="social-item">

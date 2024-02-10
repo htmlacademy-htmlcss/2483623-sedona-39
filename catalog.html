@@ -6,21 +6,21 @@
     <title>Седона - небольшой городок в Аризоне</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <!-- Шапка сайта -->
-      <a class="navigation-logo" href="index.html" aria-current="page">
+      <a class="navigation-logo" href="index.html">
         <img class="page-header-logo" src="" width="138" height="64" alt="Логотип сайта города Седона">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-             <a class="navigation-link" href="main.html">Главная</a>
+             <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="about.html">О Седоне</a>
          </li>
          <li class="navigation-item">
-          <a class="navigation-link navigation-link-current" href="hotel.html">Гостиницы</a>
+          <a class="navigation-link navigation-link-current">Гостиницы</a>
          </li>
         </ul>
         <ul class="navigation-user">
@@ -40,10 +40,10 @@
       </nav>
     </header>
 
-    <main class="main-inner">
+    <main class="main-inner" data-test="main">
       <!-- Главная часть -->
       <header class="inner-header">
-        <H1 class="inner-header-title">Гостиницы Седоны</H1>
+        <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">
@@ -51,7 +51,7 @@
             </a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Гостиницы</a>
+            <a class="breadcrumbs-link" aria-current="page">Гостиницы</a>
             <!-- <a class="breadcrumbs-link" href="catalog.html" aria-current="page">Гостиницы</a> -->
           </li>
         </ul>
@@ -88,19 +88,19 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="hotel-group" checked>
+                  <input class="control-input" type="radio" value="hotel" name="hotel-group" checked>
                     Гостиница
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="hotel-group">
+                  <input class="control-input" type="radio" value="hotel" name="hotel-group">
                     Мотель
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="hotel-group">
+                  <input class="control-input" type="radio" value="hotel" name="hotel-group">
                     Апартаменты
                 </label>
               </li>
@@ -120,15 +120,25 @@
           <option value="popular">Сначала популярные</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
-        <a class="catalog-view catalog-view-selected" href="#">
-          <span class="visually-hidden">Карточками</span>
-        </a>
-        <a href="#" class="catalog-view">
-          <span class="visually-hidden">Показать поштучно</span>
-        </a>
-        <a href="#" class="catalog-view">
-          <span class="visually-hidden">Показать список</span>
-        </a>
+        <div class="catalog-view">
+          <ul class="calatog-view-list">
+            <li class="catalog-view-item">
+              <a class="catalog-view-item catalog-view-selected" href="#">
+                <span class="visually-hidden">Карточками</span>
+              </a>
+            </li>
+            <li class="catalog-view-item">
+              <a href="#" class="catalog-view">
+                <span class="visually-hidden">Показать поштучно</span>
+              </a>
+            </li>
+            <li class="catalog-view-item">
+              <a href="#" class="catalog-view">
+                <span class="visually-hidden">Показать список</span>
+              </a>
+            </li>
+          </ul>
+        </div>
         <ul class="catalog-list">
           <li class="catalog-item">
             <a class="catalog-card-link" tabindex="-1" href="#">
@@ -197,11 +207,6 @@
         </ul>
         <ul class="pagination">
           <li class="pagination-item">
-            <a class="pagination-link pagionation-prev pagination-disabled">
-              <span class="visually-hidden">Предыдущая страница</span>
-            </a>
-          </li>
-          <li class="pagination-item">
             <a class="pagination-link pagionation-link-current">1</a>
           </li>
           <li class="pagination-item">
@@ -213,15 +218,15 @@
           <li class="pagination-item">
             <a class="pagination-link" href="#">4</a>
           </li>
-          <li>
-            <p>...</p>
+          <li class="pagination-item">
+            <span>...</span>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
       </section>
-      <section class="subscribe">
+      <section class="subscribe" data-test="subscribe">
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -232,7 +237,7 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <!-- Подвал сайта -->
       <ul class="social-list">
         <li class="social-item">
