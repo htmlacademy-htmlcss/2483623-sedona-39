@@ -202,8 +202,8 @@ div.advantages-container-2 {
   background-color: #0000004D;
 }
 
-.advantages-item:first-child::after,
-.advantages-item:last-child::after {
+.advantages-item:first-child .advantages-title::after,
+.advantages-item:last-child .advantages-title::after {
   background-color: #FFFFFF4D;
 }
 
@@ -464,6 +464,7 @@ form.subscribe-form button {
   letter-spacing: 0em;
   text-align: center;
 }
+
 .page-footer a.contact {
   text-decoration: none;
   color: #000000;
