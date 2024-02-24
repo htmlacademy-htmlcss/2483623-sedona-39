@@ -50,9 +50,18 @@ body {
 /* Меню страницы - Page-header*/
 .page-header {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
   height: 64px;
   color: #000000;
   padding: 0 70px;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .navigation-item {
