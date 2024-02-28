@@ -745,6 +745,7 @@ li.navigation-item a span.likes-number {
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   list-style: none;
   padding-left: 0;
 }
