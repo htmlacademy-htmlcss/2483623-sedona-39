@@ -122,7 +122,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   height: 64px;
   color: #000000;
   padding: 0 70px;
@@ -136,13 +136,14 @@ img {
 }
 
 .navigation-logo {
+  align-self: flex-start;
   margin-right: 30px;
 }
 
 .navigation-list {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: flex-start;
   width: 339px;
   list-style: none;
   /*  width: 339px;*/
@@ -162,8 +163,11 @@ img {
 }
 
 .navigation-user {
-  max-width: 268px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 290px;
   margin-left: auto;
+  align-items: center;
   /*width: 268px;*/
 }
 
