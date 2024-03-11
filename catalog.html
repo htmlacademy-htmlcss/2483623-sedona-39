@@ -28,10 +28,10 @@
           </ul>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-               <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
+               <a class="navigation-link loopa" href="#"><span class="visually-hidden">Поиск</span></a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link liked" href="#">
                 <span class="visually-hidden">Избранное</span>
                 <span class="likes-number">12</span>
               </a>
@@ -53,12 +53,11 @@
                 <span class="visually-hidden">Главная</span>
               </a>
             </li>
-            <li class="breadcrumbs-item breadcrumbs-arrow">
+            <!-- <li class="breadcrumbs-item breadcrumbs-arrow">
                 <span class="visually-hidden">Стрелка</span>
-            </li>
+            </li> -->
             <li class="breadcrumbs-item breadcrumbs-catalog">
               <a class="breadcrumbs-link" aria-current="page">Гостиницы</a>
-              <!-- <a class="breadcrumbs-link" href="catalog.html" aria-current="page">Гостиницы</a> -->
             </li>
           </ul>
         </header>
@@ -68,7 +67,7 @@
           <h2 class="visually-hidden">Каталог гостиниц с фильтрами</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group catalog-filter-infrastructure">
-              <legend class="catalog-filter-title">Инфрастуктура</legend>
+              <legend class="catalog-filter-title">Инфрастуктура:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="controls" for="pool">
@@ -91,7 +90,7 @@
               </ul>
             </fieldset>
             <fieldset class="catalog-filter-group catalog-filter-type">
-              <legend class="catalog-filter-title">Тип Жилья</legend>
+              <legend class="catalog-filter-title">Тип Жилья:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
@@ -133,7 +132,7 @@
       <section class="catalog" data-test="catalog">
         <h2 class="visually-hidden">Итог поиска</h2>
         <div class="catalog-search-group">
-          <p class="catalog-text">Найдено гостиниц: <span>38</span></p>
+          <p class="catalog-text">Найдено гостиниц: <span class="catalog-search-summa">38</span></p>
           <select class="catalog-select" aria-label="Сортировка">
             <option value="cheap">Сначала дешевые</option>
             <option value="popular">Сначала популярные</option>
@@ -254,9 +253,9 @@
 
         <hr class="catalog-list-bottom">
 
-        <ul class="pagination">
-          <li class="pagination-item pagionation-link-current">
-            <a class="pagination-link">1</a>
+        <ul class="pagination-list">
+          <li class="pagination-item">
+            <a class="pagination-link pagionation-link-current">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>
@@ -267,8 +266,8 @@
           <li class="pagination-item">
             <a class="pagination-link" href="#">4</a>
           </li>
-          <li class="pagination-item pagination-more">
-            <span>...</span>
+          <li class="pagination-item">
+            <span class="pagination-more">...</span>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
