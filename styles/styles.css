@@ -264,7 +264,6 @@ img {
 
 .advantages-header {
   padding: 69px 0;
-  /*gap: 25px;*/
 }
 
 .advantages-header .advantages-title {
@@ -290,16 +289,21 @@ img {
 }
 
 .advantages-list {
-  display: flex;
-  flex-wrap: wrap;
+  /* на гридах */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: start;
+    justify-content: center;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .advantages-item {
-  /*width: 400px;*/
-  width: calc(100% / 3);
+  /*width: 400px;
+  width: calc(100% / 3);*/
+  height: 100%;
   min-height: 385px;
   font-size: 18px;
   line-height: 21px;
@@ -313,9 +317,13 @@ img {
 }
 
 .advantages-item.advantages-dark {
-  display: flex;
+  /*display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-between;*/
+  grid-column: 1 / -1;
+
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   color:#ffffff;
   background-color: #82B3D3;
@@ -323,13 +331,12 @@ img {
 }
 
 .advantages-wrap {
-  /*width: 400px;*/
   width: calc(100% / 3);
   padding: 103px 85px;
 }
 
 .advantages-subtitle {
-  width: 175px;
+  /*width: 175px;*/
   position: relative;
   font-size: 24px;
   line-height: 28px;
@@ -366,7 +373,6 @@ img {
 
 .welcome-header {
   padding: 64px 0;
-  /*gap: 20px;*/
 }
 
 .welcome-header .welcome-title {
@@ -405,7 +411,7 @@ img {
 .welcome-item {
   position: relative;
   width: 400px;
-  height: 385px;
+  min-height: 385px;
   padding: calc(80px + 75px + 30px) 85px 80px;
 }
 
@@ -784,13 +790,15 @@ img {
   list-style: none;
   padding: 0;
   margin: 0;
+  gap: 8px;
 }
 
-.catalog-view-item {
+.link-view-item {
   border: 2px solid #E5E5E5;
+  border-radius: 4px;
 }
 
-.catalog-view-item.catalog-view-cards {
+.link-view-item.catalog-view-cards {
   display: block;
   width: 48px;
   height: 48px;
@@ -799,10 +807,9 @@ img {
   background-position: center;
   background-size: 16px 14px;
   padding: 14px 12px;
-  margin-right: 8px;
 }
 
-.catalog-view-item.catalog-view-one {
+.link-view-item.catalog-view-one {
   display: block;
   width: 48px;
   height: 48px;
@@ -811,10 +818,9 @@ img {
   background-position: center;
   background-size: 16px 14px;
   padding: 14px 12px;
-  margin-right: 8px;
 }
 
-.catalog-view-item.catalog-view-list {
+.link-view-item.catalog-view-list {
   display: block;
   width: 48px;
   height: 48px;
@@ -825,73 +831,60 @@ img {
   padding: 14px 12px;
 }
 
-.catalog-view-item.catalog-view-selected {
+.link-view-item.catalog-view-selected {
   border: 2px solid #000000;
   border-radius: 4px;
-  margin-right: 8px;
 }
 
 .catalog-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  /* на гридах*/
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /*grid-template-columns: repeat(3, 340px);*/
+  align-content: start;
+  justify-content: center;
+  width: 100%;
   list-style: none;
   padding: 0;
   margin: 0;
   padding-bottom: 40px;
-  gap: 16px;
+  grid-gap: 20px;
   border-bottom: 1px solid #E6E6E6;
 }
 
 .catalog-item {
-/*  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;*/
+  /* на гридах */
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  /* если название в карточке на несколько строк */
+  grid-template-rows: 1fr;
+  gap: 16px 20px;
+
   width: 340px;
-  height: 438px;
+  min-height: 438px;
   padding: 20px;
   border-radius: 4px;
   border: 1px solid #E6E6E6;
 }
 
-/*.catalog-item:not(:nth-child(3)) {
-  margin-right: 16px;
+.catalog-item .catalog-card-link {
+  grid-column: 1 / -1;
+  text-decoration: none;
 }
 
-.catalog-item:not(:last-child) {
-  margin-bottom: 16px;
-}*/
-
-.catalog-item .catalog-card-link {
-  display: block;
+.card-image {
   width: 100%;
   height: 212px;
   margin-bottom: 16px;
 }
 
 .card-title {
-  margin-block: 0;
-  margin-bottom: 16px;
-}
-
-.catalog-item .catalog-card-name {
-  width: 100%;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   text-align: left;
-  text-decoration: none;
   color: #000000;
-  margin-bottom: 16px;
-}
-
-.card-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
-.card-wrapper:not(:last-child) {
-  margin-bottom: 16px;
+  margin-block: 0;
 }
 
 .card-description {
@@ -1110,22 +1103,4 @@ img {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-}
-
-
-
-
-
-
-.title { /* создаём жирный заголовок */
-  font-weight: 700;
-}
-
-.text-italic { /* создаём наклонный текст */
-  font-style: italic;
-}
-
-.text-bold-italic { /* создаём жирный наклонный текст */
-  font-style: italic;
-  font-weight: 700;
 }
