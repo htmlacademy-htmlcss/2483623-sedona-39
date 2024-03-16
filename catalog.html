@@ -43,6 +43,9 @@
         </nav>
       </header>
 
+    <main class="main-container main-index" data-test="main">
+        <!-- Основное содержимое страницы -->
+
       <div class="search-inner">
         <!-- Раздел - Первый экран с поиском -->
         <header class="inner-header">
@@ -53,9 +56,6 @@
                 <span class="visually-hidden">Главная</span>
               </a>
             </li>
-            <!-- <li class="breadcrumbs-item breadcrumbs-arrow">
-                <span class="visually-hidden">Стрелка</span>
-            </li> -->
             <li class="breadcrumbs-item breadcrumbs-catalog">
               <a class="breadcrumbs-link" aria-current="page">Гостиницы</a>
             </li>
@@ -140,18 +140,18 @@
           </select>
           <div class="catalog-view">
             <ul class="calatog-view-list">
-              <li class="catalog-view-item catalog-view-cards catalog-view-selected">
-                <a class="link-view-item" href="#">
+              <li class="catalog-view-item">
+                <a class="link-view-item catalog-view-cards catalog-view-selected" href="#">
                   <span class="visually-hidden">Карточками</span>
                 </a>
               </li>
-              <li class="catalog-view-item catalog-view-one">
-                <a href="#" class="link-view-item">
+              <li class="catalog-view-item">
+                <a href="#" class="link-view-item catalog-view-one">
                   <span class="visually-hidden">Показать поштучно</span>
                 </a>
               </li>
-              <li class="catalog-view-item catalog-view-list">
-                <a href="#" class="link-view-item">
+              <li class="catalog-view-item">
+                <a href="#" class="link-view-item catalog-view-list">
                   <span class="visually-hidden">Показать список</span>
                 </a>
               </li>
@@ -164,90 +164,82 @@
           <li class="catalog-item">
             <a class="catalog-card-link" tabindex="-1" href="#">
               <img class="card-image" src="images/catalog/hotel-1.jpg" width="300" height="212" alt="">
-            </a>
-            <a class="catalog-card-name" href="#">
               <h3 class="card-title">Amara Resort & Spa</h3>
             </a>
-            <div class="card-wrapper card-description-price">
+            <!-- <div class="card-wrapper card-description-price"> -->
               <p class="card-description">Гостиница</p>
               <p class="card-price">От 4000 ₽</p>
-            </div>
-            <div class="card-wrapper">
+            <!-- </div> -->
+            <!-- <div class="card-wrapper"> -->
               <a class="card-button-link button" href="">Подробнее</a>
               <a class="card-button button" href="">В Избранное</a>
-            </div>
-            <div class="card-wrapper">
+            <!-- </div> -->
+            <!-- <div class="card-wrapper"> -->
               <p class="card-stars four-stars">
                 <span class="visually-hidden">Четыре звёзды</span>
               </p>
               <p class="card-rate">Рейтинг: <span>8,5</span></p>
-            </div>
+            <!-- </div> -->
            </li>
            <li class="catalog-item">
             <a class="catalog-card-link" tabindex="-1" href="#">
               <img class="card-image" src="images/catalog/hotel-2.jpg" width="300" height="212" alt="">
-            </a>
-            <a class="catalog-card-name" href="#">
               <h3 class="card-title">Villas at Poco Diablo</h3>
             </a>
-            <div class="card-wrapper card-description-price">
+            <!-- <div class="card-wrapper card-description-price"> -->
               <p class="card-description">Гостиница</p>
               <p class="card-price">От 5000 ₽</p>
-            </div>
-            <div class="card-wrapper">
+            <!-- </div> -->
+           <!--  <div class="card-wrapper"> -->
               <a class="card-button-link button" href="">Подробнее</a>
               <a class="card-button hotel-card-like button" href="">В Избранном</a>
-            </div>
-            <div class="card-wrapper">
+            <!-- </div> -->
+            <!-- <div class="card-wrapper"> -->
               <p class="card-stars five-stars">
                 <span class="visually-hidden">Пять звёзд</span>
               </p>
               <p class="card-rate">Рейтинг: <span>9,2</span></p>
-            </div>
+            <!-- </div> -->
           </li>
           <li class="catalog-item">
             <a class="catalog-card-link" tabindex="-1" href="#">
               <img class="card-image" src="images/catalog/hotel-3.jpg" width="300" height="212" alt="">
-            </a>
-            <a class="catalog-card-name" href="#">
               <h3 class="card-title">Desert Quail Inn</h3>
             </a>
-            <div class="card-wrapper card-description-price">
+            <!-- <div class="card-wrapper card-description-price">-->
               <p class="card-description">Гостиница</p>
               <p class="card-price">От 2500 ₽</p>
-            </div>
-            <div class="card-wrapper">
+            <!-- </div>-->
+            <!-- <div class="card-wrapper">-->
               <a class="card-button-link button" href="">Подробнее</a>
               <a class="card-button button" href="">В Избранное</a>
-            </div>
-            <div class="card-wrapper">
+            <!-- </div>-->
+            <!-- <div class="card-wrapper">-->
               <p class="card-stars three-stars">
                 <span class="visually-hidden">Три звёзды</span>
               </p>
               <p class="card-rate">Рейтинг: <span>6,9</span></p>
-            </div>
+            <!-- </div> -->
           </li>
           <li class="catalog-item">
             <a class="catalog-card-link" tabindex="-1" href="#">
               <img class="card-image" src="images/catalog/hotel-4.jpg" width="300" height="212" alt="">
-            </a>
-            <a class="catalog-card-name" href="#">
               <h3 class="card-title">GreenTree Inn</h3>
             </a>
-            <div class="card-wrapper card-description-price">
+            <!-- <div class="card-wrapper card-description-price">-->
               <p class="card-description">Гостиница</p>
               <p class="card-price">От 1500 ₽</p>
-            </div>
-            <div class="card-wrapper">
+            <!-- </div>-->
+            <!-- <div class="card-wrapper">-->
               <a class="card-button-link button" href="">Подробнее</a>
               <a class="card-button button" href="">В Избранное</a>
-            </div>
-            <div class="card-wrapper">
+            <!-- </div>-->
+            <!-- <div class="card-wrapper">-->
               <p class="card-stars two-stars ">
                 <span class="visually-hidden">Две звёзды</span>
               </p>
               <p class="card-rate">Рейтинг: <span>6,9</span></p>
-            </div>
+            <!-- </div>-->
           </li>
         </ul>
 
@@ -272,6 +264,9 @@
           </li>
         </ul>
       </section>
+
+
+       <!-- Подпишись -->
       <section class="subscribe subscribe-catalog" data-test="subscribe">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
