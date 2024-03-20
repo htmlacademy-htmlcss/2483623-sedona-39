@@ -873,7 +873,7 @@ img {
 
 /* Итоги поиска */
 .catalog {
-  padding: 50px 70px 60px;
+  padding: 50px 70px 44px;
 }
 
 .catalog-search-group .catalog-text {
@@ -1142,7 +1142,7 @@ img {
   gap: 8px;
   list-style: none;
   padding: 0;
-  margin: 40px 0 0;
+  margin: 38px 0 0;
 }
 
 .pagination-link {
