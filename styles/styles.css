@@ -41,49 +41,12 @@ body {
   margin: 0;
 }
 
-/* Наследование шрифтов
-input,
-text-area,
-select,
-button {
-  font-family: inherit;
-}*/
-
 /* Оптимизация изображений */
 img {
   max-width: 100%;
   height: auto;
   object-fit: contain;
 }
-
-/* Убираем отступы и маркер у списков с атрибутом class
-:where(ul, ol):where([class*="list"]) {
-  padding-left: 0;
-  list-style-type: none;
-} */
-
-/* Убираем отступы у фильтров с атрибутом class
-:where(fieldset[class]){
-  padding: 0;
-  margin-left: 0;
-  border: none;
-} */
-
-/* Убираем внешний отступы у блочных элементов с классом
-:where(
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  ul,
-  ol,
-  dl,
-  ):where([class]) {
-    margin-block: 0;
-}*/
 
 .visually-hidden {
   position: absolute;
@@ -97,7 +60,6 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
 }
-
 
 /* Главный блок - Main containrt Main-inner */
 .main-container {
@@ -136,17 +98,17 @@ img {
   align-items: center;
   column-gap: 30px;
   width: 1090px;
-  padding-left: 170px;
+  padding-left: 184px;
 }
 
 .navigation-list {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 339px;
   margin: 0;
   padding: 0;
   list-style: none;
+  gap: 32px;
 }
 
 .navigation-link {
@@ -171,7 +133,7 @@ img {
   /*min-width: 268px;*/
   margin-left: auto;
   align-items: center;
-  width: 268px;
+  width: 245px;
 }
 
 .navigation-link.loopa {
@@ -213,7 +175,7 @@ img {
   height: 20px;
   min-width: 20px;
   padding: 5px;
-  bottom: 17px;
+  bottom: 14px;
   left: 8px;
   font-size: 10px;
   font-weight: 400;
@@ -237,25 +199,23 @@ img {
   border-radius: 4px;
   color: #ffffff;
   background-color: #756157;
-  /*gap: 10px;*/
 }
 
 
 /* Первый экран - First */
 .first {
-  height: 485px;
+  /*min-height: 485px;*/
   color: #ffffff;
   background-color: #82B3D3;
   background-image: url("../images/divider.png"), url("../images/index-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto, cover;
   background-position: left bottom, left top;
+  padding-top: 51px;
+  padding-bottom: 82px;
 }
 
 .first .first-image {
-  width: 458px;
-  height: 352px;
-  padding-top: 51px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -266,11 +226,10 @@ img {
 /* Преимущества - Advantages */
 
 .advantages-header {
-  padding: 69px 0;
+  padding: 69px 258px;
 }
 
 .advantages-header .advantages-title {
-  width: 620px;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -284,20 +243,20 @@ img {
 }
 
 .advantages-header .advantages-text {
-  width: 651px;
   text-align: center;
   margin-block: 0;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
 }
 
 .advantages-list {
   /* на гридах */
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-content: start;
-    justify-content: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-content: start;
+  justify-content: center;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -312,7 +271,7 @@ img {
   line-height: 21px;
   text-align: center;
   background-color: #83B3D333;
-  padding: 103px 85px;
+  padding: 115px 83px 96px;
 }
 
 .advantages-item.advantages-light {
@@ -375,26 +334,25 @@ img {
 }
 
 .welcome-header {
-  padding: 64px 0;
+  padding: 64px 258px;
 }
 
 .welcome-header .welcome-title {
-  width: 505px;
   font-size: 30px;
   color: #000000;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 0 auto;
+  margin: 0 auto 20px;
 }
 
 .welcome-header .welcome-text {
-  width: 490px;
-  margin: 20px auto 0;
+  margin: 0 auto;
 }
 
 .welcome-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   padding: 0;
@@ -415,7 +373,7 @@ img {
   position: relative;
   width: 400px;
   min-height: 385px;
-  padding: calc(80px + 75px + 30px) 85px 80px;
+  padding: 183px 85px 80px;
 }
 
 .welcome-item .welcome-subtitle::before {
@@ -425,7 +383,7 @@ img {
   width: 72px;
   background-repeat: no-repeat;
   background-size: contain;
-  top: calc(-75px - 30px);
+  top: calc(-75px - 25px);
   left: 50%;
   transform: translateX(-50%);
 }
@@ -456,24 +414,21 @@ img {
 
 /* Search */
 .search {
-  padding: 96px 304px;
+  padding: 96px 258px;
   text-align: center;
-  /*gap: 10px; */
 }
 
 .search .search-title  {
-  /*width: 297px;*/
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
-  margin: 0 auto;
+  margin: 0 auto 20px;
 }
 
 .search .search-text {
-  /*width: 592px;*/
-  margin: 20px auto 52px;
+  margin: 0 auto 52px;
 }
 
 .search button.search-button {
@@ -508,6 +463,7 @@ img {
 .subscribe.subscribe-index .subscribe-text {
   color: #ffffff;
 }
+
 
 
 /* Подвал - Footer */
@@ -711,9 +667,71 @@ img {
   line-height: 23px;
 }
 
+
+/* Фильтр по типам */
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.control:hover .control-mark {}
+
+.control-input:disabled + .control-mark {}
+
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked ~ .control-mark::before {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 19px;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+  background-image: url("../images/catalog/Vector.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px 10px;
+}
+
+/* Radio */
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before,
+.control-input[type="radio"]:checked ~ .control-mark::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  content: "";
+}
+
 .catalog-filter-item:not(:last-child) {
   margin-bottom: 16px;
 }
+
+.filter-label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
 
 .button-filter {
   display: flex;
@@ -745,6 +763,112 @@ img {
 .reset-filter-button {
   background-color: transparent;
 }
+
+
+/* Фильтр по стоимости */
+.catalog-filter-group.catalog-filter-price {
+  margin: 0;
+  padding: 0;
+}
+
+.price-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2px;
+  width: 288px;
+  margin-bottom: 46px;
+}
+
+.price-label {
+  position: relative;
+}
+
+.price-label-text {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: right;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.price-input {
+  width: 143px;
+  height: 48px;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+  background-color: #ffffff;
+  text-align: left;
+  appearance: textfield;
+}
+
+.price-input::-webkit-outer-spin-button,
+.price-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.price-input.min-price {
+  border-radius: 4px 0 0 4px;
+  padding: 12px 20px;
+}
+
+.price-input.max-price {
+  border-radius: 0 4px 4px 0;
+  padding: 12px 20px;
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: #929090;
+  margin-bottom: 8px;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background-color: #3F5E72;
+}
+
+.range-toggle: active,
+.range-toggle:focus {
+  outline: 3px solid #3F5E72;
+}
+
+.toggle-min {
+  top: -8px;
+  left: 0;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
 
 
 /* Итоги поиска */
@@ -786,7 +910,21 @@ img {
   background-repeat: no-repeat;
   background-position: 260px 21px;
   background-size: 12px 7px;
+  cursor: pointer;
 }
+
+
+.catalog-select:hover,
+.catalog-select:focus {
+  border-color: #3F5E72;
+}
+
+.catalog-select:focus {
+  outline: 2px solid #3F5E72;
+}
+
+
+
 
 .calatog-view-list {
   display: flex;
@@ -914,8 +1052,7 @@ img {
   display: block;
   width: 140px;
   height: 36px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 8px 6px;
   border-radius: 4px;
   font-family: inherit;
   text-align: center;
@@ -1049,30 +1186,29 @@ img {
   background-color: #ffffff;
   text-align: center;
   padding: 96px 258px 104px 258px;
-  /* gap: 10px; */
 }
 
 .subscribe .subscribe-title {
-  /*width: 406px;*/
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
-  margin: 0 auto;
+  margin: 0 auto 20px;
 }
 
 .subscribe .subscribe-text {
-  width: 475px;
   text-align: center;
   color: inherit;
-  margin: 20px auto 54px;
+  margin: 0 auto 54px;
 }
 
 .subscribe-form {
   display: flex;
   height: 52px;
   width: 684px;
+  flex-grow: 1;
+  margin: 0;
 }
 
 .subscribe-form input {
@@ -1088,8 +1224,50 @@ img {
   border-radius: 4px 0 0 4px;
   border: none;
   background-color: #F2F2F2;
-  /*gap: 260px;*/
+
+
 }
+
+.subscribe-form input:hover,
+.subscribe-form input:focus,
+.subscribe-form button:hover,
+.subscribe-form button:focus {
+  border-color: #3F5E72;
+}
+
+.subscribe-form input:focus,
+.subscribe-form button:focus {
+  outline: 2px solid #3F5E72;
+}
+
+
+/* Hover, Focus */
+.field:hover,
+.field:focus {
+  border-color: #3F5E72;
+}
+
+.field:focus {
+  outline: 2px solid #3F5E72;
+}
+
+/* Disabled */
+.field:disabled,
+.field:disabled:hover {
+  color: #595959;
+  background-color: #E5E5E5;
+  border-color: #3F5E72;
+}
+
+/* Invalid */
+.field:invalid {
+  box-shadow: none;
+}
+
+.field:focus:invalid {
+  border-color: #ea5454;
+}
+
 
 .subscribe-form button {
   font-family: inherit;
@@ -1106,4 +1284,15 @@ img {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+}
+
+
+/* Field */
+.field {
+  margin: 0;
+  padding: 8px 14px;
+  font: inherit;
+  font-weight: 700;
+  background-color: #ffffff;
+  border: 2px solid #3F5E72;
 }
