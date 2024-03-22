@@ -110,7 +110,7 @@
           </li>
           <li class="welcome-item welcome-present">
             <h3 class="welcome-subtitle">Сувениры</h3>
-            <p class="welcome-description">Не только китайского, но и настоящего местного производства!</p>
+            <p class="welcome-description">Не только китайского, <br>но и настоящего местного производства!</p>
           </li>
         </ul>
       </section>
@@ -165,8 +165,44 @@
     </div>
 
     <div class="modal-container">
-
-
+      <div class="modal modal-search">
+        <button class="modal-close-button">
+         <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-search-form" action="https://echo.htmlacademy.ru/" method="get">
+            <p class="field-group">
+              <label class="modal-form-label" for="search-entrance-date">Дата Заезда:</label>
+              <input class="modal-form-field data-field data-field-entrance" type="text" id="search-entrance-date" name="search-entrance-date" placeholder="01 января 2023" value="27 апреля 2020">
+              <span class="attention attention-error">Мы не можем отправить вас в прошлое.</span>
+            </p>
+            <p class="field-group">
+              <label class="modal-form-label" for="search-out-date">Дата Выезда:</label>
+              <input class="modal-form-field data-field data-field-out" type="text" id="search-out-date" name="search-out-date" placeholder="01 января 2023" value="1 сентября 2023">
+              <span class="attention">На эти даты есть свободные номера. Пока есть.</span>
+            </p>
+            <div class="modal-form-family">
+              <p class="field-group-adult ">
+                <label class="modal-form-label" for="adult">Взрослые:</label>
+                <input class="modal-form-field field-sum" type="number" id="adult" name="adult" placeholder="0" min="1" max="100" value="2">
+              </p>
+              <p class="field-group-child">
+                <span class="form-label">
+                  <label class="modal-form-label" for="child">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button">
+                    <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                    </button>
+                  </span>
+                </span>
+                <input class="modal-form-field field-sum" type="number" id="child" name="child" placeholder="0" min="0" max="100" value="2">
+              </p>
+            </div>
+            <button class="button modal-form-button" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 </html>
