@@ -1131,6 +1131,7 @@ img {
   padding: 14px 12px;
 }
 
+
 .link-view-item.catalog-view-one {
   display: block;
   width: 48px;
@@ -1155,8 +1156,27 @@ img {
 
 .link-view-item.catalog-view-selected {
   border: 2px solid #000000;
-  border-radius: 4px;
 }
+
+.link-view-item {
+  border-radius: 4px;
+  transition: all 0.3s ease-out;
+}
+
+.link-view-item:focus {
+  border-color: #68A2CA;
+  outline: none;
+  outline-offset: 0;
+}
+
+.link-view-item:hover {
+  border-color: #000000;
+}
+
+.link-view-item:active {
+  border-color: #000000;
+}
+
 
 .catalog-list {
   /* на гридах*/
