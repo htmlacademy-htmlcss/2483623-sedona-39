@@ -202,6 +202,36 @@ img {
   transition: all 0.3s ease-out;
 }
 
+.navigation-link.button:focus,
+.card-button-link:focus,
+.button.search-button:focus {
+  background-color: #615048;
+  outline: none;
+  outline-offset: 0;
+}
+
+.navigation-link.button:hover,
+.card-button-link:hover,
+.button.search-button:hover {
+  background-color: #615048;
+}
+
+.navigation-link.button:active,
+.card-button-link:active,
+.button.search-button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.navigation-link.button:disabled,
+.navigation-link.button:disabled:hover,
+.card-button-link:disabled,
+.card-button-link:disabled:hover,
+.button.search-button:disabled,
+.button.search-button:disabled:hover {
+  background-color: #E5E5E5;
+  color: #ffffff;
+}
 
 /* Первый экран - First */
 .first {
@@ -483,6 +513,7 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
+  transition: all 0.3s ease-out;
 }
 
 .social-list .social-vk {
@@ -518,36 +549,69 @@ img {
   background-repeat: no-repeat;
 }
 
+.social-list:focus svg {
+  fill: #68A2CA;
+  outline: none;
+  outline-offset: 0;
+}
 
+.social-list:hover svg {
+  fill: #68A2CA;
+}
+
+.social-list:active {
+  fill: rgba(104, 162, 202, 0.3);
+}
 
 .page-footer a.contact {
   width: 720px;
   height: 50px;
-  padding: 6px 166px 5px 195px;
   font-size: 40px;
   font-weight: 400;
   line-height: 40px;
-  letter-spacing: 0em;
   text-align: center;
-}
-
-.page-footer a.contact {
   text-decoration: none;
   color: #000000;
-  height: 50px;
   padding: 6px 111px 5px 195px;
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 40px;
-  text-align: center;
   margin: 0 auto;
+  transition: all 0.3s ease-out;
 }
 
-.page-footer a.htmlacademy-logo {
+.page-footer a.contact:focus {
+  color: #756157;
+  outline: none;
+  outline-offset: 0;
+}
+
+.page-footer a.contact:hover {
+  color: #756157;
+}
+
+.page-footer a.contact:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+
+.page-footer .htmlacademy-logo {
   width: 199px;
   text-align: right;
+  transition: all 0.3s ease-out;
 }
 
+.page-footer .htmlacademy-logo:focus {
+  filter: invert(40%) sepia(6%) saturate(1552%) hue-rotate(335deg) brightness(91%) contrast(79%);
+  outline: none;
+  outline-offset: 0;
+}
+
+.page-footer .htmlacademy-logo:hover {
+  filter: invert(40%) sepia(6%) saturate(1552%) hue-rotate(335deg) brightness(91%) contrast(79%);
+}
+
+.page-footer .htmlacademy-logo:active {
+  filter: invert(40%) sepia(6%) saturate(1552%) hue-rotate(335deg) brightness(91%) contrast(79%);
+  opacity: 0.3;
+}
 
 /* КАТАЛОГ - CATALOG */
 .search-inner {
@@ -1185,14 +1249,38 @@ img {
 .card-button-link {
   background-color: #756157;
   margin-right: 10px;
+  transition: all 0.3s ease-out;
 }
 
 .card-button {
   background-color: #82B3D3;
+  transition: all 0.3s ease-out;
 }
 
 .card-button.hotel-card-like {
   background-color: #7DB54F;
+  transition: all 0.3s ease-out;
+}
+
+.card-button.hotel-card-like:focus {
+  background-color: #6C9E42;
+  outline: none;
+  outline-offset: 0;
+}
+
+.card-button.hotel-card-like:hover {
+  background-color: #6C9E42;
+}
+
+.card-button.hotel-card-like:active {
+  background-color: #7DB54F;
+  color: background: rgba(255, 255, 255, 0.3);
+}
+
+.card-button.hotel-card-like:disabled,
+.card-button.hotel-card-like:disabled:hover {
+  background-color: #E5E5E5;
+  color: #ffffff;
 }
 
 .card-stars {
@@ -1277,6 +1365,22 @@ img {
   text-align: center;
   border-radius: 4px;
   padding: 11px 0 13px 0;
+  transition: all 0.3s ease-out;
+}
+
+.pagination-link:focus {
+  background-color: #68A2CA;
+  outline: none;
+  outline-offset: 0;
+}
+
+.pagination-link:hover {
+  background-color: #68A2CA;
+}
+
+.pagination-link:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .pagionation-link-current {
