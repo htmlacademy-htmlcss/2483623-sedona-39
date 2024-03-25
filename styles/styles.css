@@ -220,19 +220,20 @@ img {
   background-color: #7DB54F;
   border-radius: 50%;
   text-align: center;
+  transition: all 0.3s ease-out;
 }
 
-.navigation-user-link.loopa:focus,
-.navigation-user-link.liked:focus {
+.navigation-user-link.loopa:focus::before,
+.navigation-user-link.liked:focus::before {
   opacity: 0.3;
   outline: none;
   outline-offset: 0;
 }
 
-.navigation-user-link.loopa:hover,
-.navigation-user-link.liked:hover,
-.navigation-user-link.loopa:active,
-.navigation-user-link.liked:active {
+.navigation-user-link.loopa:hover::before,
+.navigation-user-link.liked:hover::before,
+.navigation-user-link.loopa:active::before,
+.navigation-user-link.liked:active::before {
   opacity: 0.3;
 }
 
@@ -244,7 +245,6 @@ img {
 .navigation-user-link.liked:active  .likes-number {
   color: #ffffff;
   background-color: #6C9E42;
-  opacity: 1;
 }
 
 .navigation-user-link.button {
